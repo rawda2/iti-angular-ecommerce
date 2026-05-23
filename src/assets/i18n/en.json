@@ -1,0 +1,24 @@
+{
+  "APP": {
+    "NAME": "E-Commerce App",
+    "TAGLINE": "Your one-stop shop for everything"
+  },
+  "NAV": {
+    "HOME": "Home",
+    "PRODUCTS": "Products",
+    "CART": "Cart",
+    "ORDERS": "Orders",
+    "PROFILE": "Profile",
+    "LOGIN": "Login",
+    "REGISTER": "Register",
+    "LOGOUT": "Logout"
+  },
+  "AUTH": {
+    "LOGIN_TITLE": "Welcome Back",
+    "REGISTER_TITLE": "Create Account",
+    "EMAIL": "Email Address",
+    "PASSWORD": "Password",
+    "SIGN_IN": "Sign In",
+    "SIGN_UP": "Sign Up"
+  }
+}
