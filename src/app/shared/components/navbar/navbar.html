@@ -1,1 +1,31 @@
-<p>navbar works!</p>
+
+<nav class="navbar">
+    <div class="nav-container">
+        <div class="nav-brand">
+            <a routerLink="/">🛍️ E-Shop</a>
+        </div>
+
+        <div class="nav-links">
+            <a routerLink="/products" routerLinkActive="active">Products</a>
+            <a routerLink="/categories" routerLinkActive="active">Categories</a>
+            <a routerLink="/about" routerLinkActive="active">About</a>
+        </div>
+
+        <div class="nav-actions">
+            <button class="cart-btn" (click)="goToCart()">
+                🛒 Cart
+                <span *ngIf="cartCount > 0" class="cart-badge">{{ cartCount }}</span>
+            </button>
+
+            <div *ngIf="authService.isLoggedIn()" class="user-menu">
+                <span class="user-name">{{ authService.userData()?.displayName }}</span>
+                <button (click)="logout()" class="logout-btn">Logout</button>
+            </div>
+
+            <div *ngIf="!authService.isLoggedIn()" class="auth-buttons">
+                <a routerLink="/login" class="login-btn">Login</a>
+                <a routerLink="/register" class="register-btn">Register</a>
+            </div>
+        </div>
+    </div>
+</nav>

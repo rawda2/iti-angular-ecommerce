@@ -3,7 +3,7 @@ export const environment = {
   apiUrl: 'https://api.example.com',
   stripeKey: 'pk_live_YOUR_KEY',
   googleClientId: 'YOUR_GOOGLE_CLIENT_ID',
-    firebase: {
+  firebase: {
     apiKey: "AIzaSyA9E55ztNw4B0_a-7BjdFaS8X5OiW-7u-w",
     authDomain: "iti-angular-ecommerce.firebaseapp.com",
     projectId: "iti-angular-ecommerce",
